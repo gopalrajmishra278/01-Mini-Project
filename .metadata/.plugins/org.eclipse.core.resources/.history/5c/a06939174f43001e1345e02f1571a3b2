@@ -1,0 +1,5 @@
+package com.gopal.repository;
+
+public interface ContactRepository {
+
+}

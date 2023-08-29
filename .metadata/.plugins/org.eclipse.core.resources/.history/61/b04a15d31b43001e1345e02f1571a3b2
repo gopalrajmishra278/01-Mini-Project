@@ -1,0 +1,42 @@
+package com.gopal.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.gopal.binding.Contact;
+
+@Service
+public class ContactServiceImpl implements ContactService{
+
+	@Override
+	public String saveContact(Contact contact) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Contact> getAllContacts() {
+		
+		return null;
+	}
+
+	@Override
+	public Contact getContactById() {
+		
+		return null;
+	}
+
+	@Override
+	public String updateContact(Contact contact) {
+		
+		return null;
+	}
+
+	@Override
+	public String deleteContactById(Integer contactById) {
+		
+		return null;
+	}
+
+}

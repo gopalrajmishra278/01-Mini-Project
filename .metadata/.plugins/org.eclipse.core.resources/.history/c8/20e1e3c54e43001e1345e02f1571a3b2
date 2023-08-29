@@ -1,0 +1,52 @@
+package com.gopal.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.gopal.binding.Contact;
+import com.gopal.repository.ContactRepository;
+
+@Service
+public class ContactServiceImpl implements ContactService{
+	
+	@Autowired
+	private ContactRepository repo;
+
+	@Override
+	public String saveContact(Contact contact) {
+		
+		contact= repo.save(contact);
+		if(contact.getContactId( )!= null) {
+			
+			return "Contact saved";
+		}else {
+			
+			return "Contact failed to save";
+		}
+		
+	}
+
+	@Override
+	public List<Contact> getAllContacts() {
+	
+		return null;
+	}
+
+	@Override
+	public Contact getContactById(Integer contactId) {
+		
+		return null;
+	}
+
+	@Override
+	public String deleteContactById(Integer contactId) {
+		
+		return null;
+	}
+
+	
+
+	
+}
